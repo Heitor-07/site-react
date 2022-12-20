@@ -1,0 +1,75 @@
+#sobre {
+    background-color: #f8f7ff;
+    padding: 100px 20px;
+    text-align: center;    
+}
+
+#sobre .primeiro-paragrafo {
+    line-height: 32px;
+}
+
+.cards-sobre {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-sobre, .cards-sobre img {
+    width: 50%;
+    max-height: 300px;
+    border: 1px solid #a2adad;
+}
+
+.card-sobre img {
+    object-fit: cover;
+}
+
+.card-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 25px;
+}
+
+.card-sobre h4 {
+    font-size: 36px;
+    font-family: 'Anybody', cursive;
+    letter-spacing: 5px;
+    line-height: 42px;
+}
+
+.card-sobre p {
+    font-size: 22px;
+    color: #4a4a4a;
+}
+
+@media screen and (max-width: 768px) {
+    #sobre {
+        padding: 60px 20px;   
+    }
+    .card-sobre {
+        padding: 15px;
+    }
+    .card-sobre h4 {
+        font-size: 22px;
+    }
+    .card-sobre p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #sobre {
+        padding-left: 10px;
+        padding-right: 10px;   
+    }
+    .cards-sobre {
+        flex-direction: column;
+    }  
+    .card-sobre, .cards-sobre img {
+        width: 100%;
+        height: 300px;
+    }  
+}
